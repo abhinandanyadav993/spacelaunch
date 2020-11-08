@@ -1,0 +1,33 @@
+<!-- <p>layout works!</p>
+<app-year-list></app-year-list>
+<app-launch></app-launch>
+<app-landing></app-landing> -->
+
+<div
+    class="container main"
+    id="mainContent"
+>
+    <div class="row">
+        <div class="col">
+            <h1>SpaceX Launch Programs</h1>
+        </div>
+        <div class="col col-1 pr-0">
+            <aside class="sidebar">
+                <app-filter
+                    [activeYear]="activeYear"
+                    [selectedlaunch]="selectedlaunch"
+                    [selectedlanding]="selectedlanding"
+                ></app-filter>
+            </aside>
+        </div>
+        <div class="col col-2 pl-0">
+            <app-mission [dataSource]="dataSource"></app-mission>
+        </div>
+        <div class="col text-center">
+            <h3>
+                <span>Developed By:</span>
+                Abhinandan
+            </h3>
+        </div>
+    </div>
+</div>

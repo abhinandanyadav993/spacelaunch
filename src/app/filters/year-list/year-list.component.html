@@ -1,0 +1,12 @@
+<p class="lable">Launch Year</p>
+<ul>
+    <li *ngFor="let year of launch_years">
+        <button
+            [attr.aria-label]="year"
+            [class.active]="activeYear==year"
+            (click)="filterYear(year)"
+        >
+            {{ year }}
+        </button>
+    </li>
+</ul>

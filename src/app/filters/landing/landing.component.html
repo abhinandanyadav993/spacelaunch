@@ -1,0 +1,8 @@
+<p class="lable">Successful Landing</p>
+<ul>
+    <li><button [class.active]="(selectedlanding && selectedlanding !=='' && selectedlanding == 'true')"
+            (click)="launchHandler(true)" [attr.aria-label]="selectedlanding">True</button></li>
+    <li><button [class.active]="(selectedlanding && selectedlanding !== '' && selectedlanding == 'false')"
+            (click)="launchHandler(false)" [attr.aria-label]="selectedlanding">False</button></li>
+
+</ul>

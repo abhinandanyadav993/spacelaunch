@@ -1,0 +1,21 @@
+<p class="lable">Successful Launch</p>
+<ul>
+    <li>
+        <button
+            [attr.aria-label]="launch_success"
+            [class.active]="(selectedlaunch && selectedlaunch !== '' && selectedlaunch == 'true')"
+            (click)="launchHandler(true)"
+        >
+            True
+        </button>
+    </li>
+    <li>
+        <button
+            [attr.aria-label]="launch_success"
+            [class.active]="(selectedlaunch && selectedlaunch !== '' && selectedlaunch == 'false')"
+            (click)="launchHandler(false)"
+        >
+            False
+        </button>
+    </li>
+</ul>
